@@ -39,9 +39,9 @@ book.add(viz_5)
 
 all_wizytowki = (viz_1, viz_2, viz_3, viz_4, viz_5)
 
-by_first_name = sorted(all_wizytowki, key=lambda BizCard: BizCard.name)
-by_surname = sorted(all_wizytowki, key=lambda BizCard: BizCard.surname)
-by_email = sorted(all_wizytowki, key=lambda BizCard: BizCard.email)
+by_first_name = sorted(all_wizytowki, key=lambda biz_card: biz_card.name)
+by_surname = sorted(all_wizytowki, key=lambda biz_card: biz_card.surname)
+by_email = sorted(all_wizytowki, key=lambda biz_card: biz_card.email)
 
 book.show_all()
 print(by_first_name)
