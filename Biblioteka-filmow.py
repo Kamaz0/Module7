@@ -23,7 +23,7 @@ class FilmSeriesList:
     def search(self, title):
         movies = [i for i in self.full_list if i.title == title]
         return movies
-        #movies = [i for i in self.full_list if i.title.lower() == title.lower()]
+        # movies = [i for i in self.full_list if i.title.lower() == title.lower()]
 
     def generate_views(self):
         i = random.randint(0,len(self.full_list)-1)        
@@ -43,8 +43,7 @@ class FilmSeriesList:
             movies = self.full_list
         movies = sorted(movies, key=lambda x: x.times_played,reverse=True)
         return movies[:n]
-        
-     
+             
     # parametr content_type, którym wybierzesz czy mają zostać pokazane filmy, czy seriale
 
 
@@ -104,8 +103,6 @@ print(film1.times_played)
 print(lista_lista.get_movies())
 print(lista_lista.get_series())
 
- # jest_filmem = [isinstance(i, Film) for i in self.full_list] pierwsza proba
-
 
 print(lista_lista.search("Lincz"))
 
@@ -117,4 +114,3 @@ for movie in lista_lista.full_list:
 
 print(lista_lista.top_titles())
 print(lista_lista.top_titles(2,"series"))
-
